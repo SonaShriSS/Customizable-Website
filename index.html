@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta class="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Trial</title>
+    <link rel="stylesheet" href="styles.css" />
+    
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<style>
+  .div {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    animation: mymove 2s infinite;
+    animation-direction: normal;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+  }
+
+  .div2{
+    background-color: darkred;
+    display: none;
+  }
+
+  @keyframes mymove {
+    0% {
+      left: 0px;
+      width: 300px;
+      height: auto;
+    }
+    100%{
+      width:700px;
+      height: auto;
+    }
+    
+  }
+  .flex-container{
+            display: flex;
+            flex-direction: row;
+        }
+        #about,#desc{
+            padding: 20px;
+        }
+        #img{
+            padding: 0px 10px 0px 20px;
+        }
+        #desc{
+            align-self: center;
+            color: white;
+        }
+        #img{
+            margin-left: 100px;
+        }
+        #div2,#div3,#div4{
+            display: none;
+            color: white;
+        }
+        #info{
+          left: 20%;
+        }
+</style>
+  </head>
+  
+  <body>
+    
+      <!-- <div class="colors">
+        <input type="color" id="color1" /><br />
+        <label for="color1">Navbar</label><br />
+        <input type="color" id="color2" /><br />
+        <label for="color2">Anchor Tags</label><br />
+        <input type="color" id="color3" /><br />
+        <label for="color3">Body</label><br />
+        <input type="color" id="color4" /><br />
+        <label for="color4">Font</label><br />
+        <button id="select" onclick="change()">change</button>
+      </div> -->
+      <header>
+        <nav class="navbar" id="navbar">
+          <ul class="navmenu">
+            <li class="navlinks"><a href="#" class="a">Home</a></li>
+            <li class="navlinks"><a href="#" class="a" onmouseover="ani()" onmouseout="normal()" value="Click">About</a></li>
+            <li class="navlinks"><a href="#" class="a" onmouseover="ani2()" onmouseout="normal2()" value="Click">Services</a></li>
+            <li class="navlinks"><a href="#" class="a" onmouseover="ani3()" onmouseout="normal3()" value="Click">Contact us</a></li>
+          </ul>
+          <button id="custom" onclick="Alert.render()">Customize</button>
+        </nav>
+      </header>
+
+      <!-- <p id="div2">
+        <strong>Note:</strong> This website is a customizable website i,e.. which enables the user to customize the website according to the users intrest.one can change the background colors and font colors,this will increase their intres. Because of this, they may send more time on the website. 
+      </p> -->
+      <div id="content" class="flex-container">
+        <div id="navct">
+        <div id="div2">
+          <h1>About</h1>
+          <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Perspiciatis voluptatum velit totam minima est? Recusandae porro,
+          rerum animi debitis est quod sint natus, esse fuga tempora,
+          molestiae voluptates modi? Cumque, officia non? Officia inventore
+          nesciunt itaque culpa ducimus a rem aliquid, porro dignissimos id
+          explicabo in laboriosam totam!
+          </p>
+        </div>
+        
+        <div id="div3">
+          <h1>Services</h1>
+          <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Perspiciatis voluptatum velit totam minima est? Recusandae porro,
+          rerum animi debitis est quod sint natus, esse fuga tempora,
+          molestiae voluptates modi? Cumque, officia non? Officia inventore
+          nesciunt itaque culpa ducimus a rem aliquid, porro dignissimos id
+          explicabo in laboriosam totam!
+          </p>
+        </div>
+        <br>
+        <div id="div4">
+          <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Perspiciatis voluptatum velit totam minima est? Recusandae porro,
+          rerum animi debitis est quod sint natus, esse fuga tempora,
+          molestiae voluptates modi? Cumque, officia non? Officia inventore
+          nesciunt itaque culpa ducimus a rem aliquid, porro dignissimos id
+          explicabo in laboriosam totam!
+          </p>
+        </div>
+      </div>
+        <div id="info">
+          <img id="img" src="images/logo.jpg" alt="Logo" style="align-self: center" />
+          <p id="desc">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Perspiciatis voluptatum velit totam minima est? Recusandae porro,
+            rerum animi debitis est quod sint natus, esse fuga tempora,
+            molestiae voluptates modi? Cumque, officia non? Officia inventore
+            nesciunt itaque culpa ducimus a rem aliquid, porro dignissimos id
+            explicabo in laboriosam totam! Voluptates fuga cum quia id molestias
+            tenetur sit ratione possimus harum, ducimus voluptatum veniam fugit
+            recusandae consequatur vitae deleniti pariatur, nulla repudiandae
+            rem voluptatem fugiat, perspiciatis iusto numquam architecto.
+            Exercitationem, dolores consequuntur incidunt reprehenderit itaque
+            delectus eveniet quae. 
+          </p>
+        </div>  
+      </div>
+      <!-- <p id="result"></p> -->
+    
+
+    <div id="dialogoverlay"></div>
+    <div id="dialogbox">
+      <div>
+        <div id="dialogboxhead"></div>
+        <div id="dialogboxbody"></div>
+        <div id="dialogboxfoot"></div>
+      </div>
+    </div>
+
+    <script>
+      var count=0;
+      
+      function ani() {
+          document.getElementById("div2").className = "div";
+          var desc=document.getElementById("desc");
+          var about=document.getElementById("div2");
+          var info=document.getElementById("info");
+          info.style.marginLeft="0px";
+          desc.style.width="500px";
+          about.style.display="block";
+          var font = document.getElementById("color6");
+          document.getElementById("div2").style.color = font.value;
+        }
+  
+        function normal(){
+          document.getElementById("div2").className = "div2";
+          var about=document.getElementById("div2");
+          var info=document.getElementById("info");
+          info.style.marginLeft="400px";
+          about.style.display="none";
+        }
+
+        function ani2() {
+          document.getElementById("div3").className = "div";
+          var desc=document.getElementById("desc");
+          var about=document.getElementById("div3");
+          var info=document.getElementById("info");
+          info.style.marginLeft="0px";
+          desc.style.width="500px";
+          about.style.top="150px";
+          about.style.display="block";
+          var font = document.getElementById("color6");
+          document.getElementById("div3").style.color = font.value;
+        }
+  
+        function normal2(){
+          document.getElementById("div3").className = "div3";
+          var services=document.getElementById("div3");
+          services.style.display="none";
+          var info=document.getElementById("info");
+          info.style.marginLeft="400px";
+        }
+
+      function alertbox() {
+        this.render = function () {
+          var wh = window.innerWidth;
+          var ht = window.innerHeight;
+          var dialogoverlay = document.getElementById("dialogoverlay");
+          dialogoverlay.style.display = "block";
+          dialogoverlay.style.height = ht + "px";
+          dialogbox.style.right = 50 + "px";
+          dialogbox.style.top = "100px";
+          dialogbox.style.display = "block";
+
+          document.getElementById("dialogboxhead").innerHTML =
+            "Choose Your Favorite Colors.....";
+          document.getElementById("dialogboxbody").innerHTML =
+            "<table>" +
+            "<tr><td><label for='color1'>Navbar</label></td><td><input type='color' oninput='custom.navbarfun()' id='color1' value='#3d4042' /></td><td><input type='color' oninput='custom.navbarfun()' id='color2' value='#ec2f4b' /></td></tr>" +
+            "<tr><td><label for='color2'>Anchor Tags</label></td><td><input type='color' oninput='custom.anchorfun()' id='color3' value='#FFFFFF' /></td></tr>" +
+            "<tr><td><label for='color3'>Body</label></td><td><input type='color' oninput='custom.bodyfun()' id='color4' value='#3d4042' /></td><td><input type='color' oninput='custom.bodyfun()' id='color5' value='#ec2f4b' /></td></tr>" +
+            "<tr><td><label for='color4'>Font</label></td><td><input type='color' id='color6' oninput='custom.fontfun()' value='#FFFFFF' /></td></tr>" +
+            "</table>";
+          // "<button id='select' onclick='change()'>change</button>";
+          document.getElementById("dialogboxfoot").innerHTML =
+            '<button onclick="Alert.ok()">OK</button>';
+        };
+        this.ok = function () {
+          document.getElementById("dialogbox").style.display = "none";
+          document.getElementById("dialogoverlay").style.display = "none";
+        };
+      }
+      var Alert = new alertbox();
+
+      function customize() {
+        this.navbarfun = function () {
+          navbar.style.background =
+            "linear-gradient(to right, " +
+            document.getElementById("color1").value +
+            "," +
+            document.getElementById("color2").value +
+            ")";
+        };
+        this.anchorfun = function () {
+          var anchor = document.getElementById("color3");
+          var x = document.getElementsByClassName("a");
+
+          for (let i = 0; i < x.length; i++) {
+            document.getElementsByClassName("a")[i].style.color = anchor.value;
+          }
+        };
+        this.bodyfun = function () {
+          var body_left = document.getElementById("color4");
+          var body_right = document.getElementById("color5");
+
+          document.getElementById("content").style.background =
+            "linear-gradient(to right, " +
+            body_left.value +
+            "," +
+            body_right.value +
+            ")";
+        };
+        this.fontfun = function () {
+          var font = document.getElementById("color6");
+          document.getElementById("desc").style.color = font.value;
+        };
+      }
+      var custom = new customize();
+    </script>
+  </body>
+</html>

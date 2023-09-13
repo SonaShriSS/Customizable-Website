@@ -1,0 +1,96 @@
+#dialogoverlay{
+    display: none;
+    opacity: .1;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    background-color: black;
+    width: 100%;
+    z-index: 10;
+}
+#dialogbox{
+    display: none;
+    position: fixed;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 8px 8px 10px 5px rgb(34, 34, 34);
+    z-index: 10;
+}
+#dialogbox div{
+    background-color:#FFCF00;
+    border-radius: 10px;
+}
+#dialogboxhead{
+    padding: 10px;
+}
+#dialogboxbody{
+    padding: 20px;
+    height: 200px;
+}
+#dialogboxfoot{
+    padding: 10px;
+    text-align: right;
+}
+body{
+    background: -webkit-linear-gradient(to right, #3d4042, #ec2f4b); 
+    background: linear-gradient(to right, #3d4042, #ec2f4b); 
+}
+button{
+    padding: 5px;
+    border-radius: 10;
+}
+/* .colors{
+	width: 200px;
+	height: 100px;
+	position: absolute;
+	top: 100px;
+	right: 0; 	
+} */
+img{
+    width: 200px;
+    height: 175px;
+    border-radius: 10px;
+    padding-top: 40px;
+}
+/* #info{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+} */
+input{
+    width: 55px;
+}
+#info{
+    margin-left:400px;
+}
+.navbar{
+    border:1px solid black;
+}
+nav button{
+    float: right;
+}
+.navlinks{
+    display: inline-block;
+    padding: 10px;
+    margin: 5px 6px;
+}
+.navlinks a{
+    color: white;
+}
+.navlinks a:hover{
+    text-decoration: none;
+}
+#desc{
+    width: 500px;
+}
+
+@media screen and (min-width:320px) and (max-width:480px){
+    #desc{
+        font-size: 20px;
+    }
+}
+
+#navct{
+    display: flex;
+    flex-direction: column;
+}
